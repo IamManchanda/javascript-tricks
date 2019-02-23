@@ -15,6 +15,7 @@ var person = {
   },
 };
 
+console.log('--------Solution--------');
 const checkFirstnameInPerson = 'firstname' in person;
 const checkStreetInPerson = 'street' in person;
 const checkStreetInPersonsAddress = 'street' in person.address;
