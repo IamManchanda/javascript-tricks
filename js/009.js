@@ -1,7 +1,8 @@
 console.clear();
 
 { /* Computed Object Properties. */
-  const key = window.prompt('Set Property name: ');
+  console.log('--------Solution--------');
+  const key = 'harry';
   const obj = {
     [key]: 1,
   };
