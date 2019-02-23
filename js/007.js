@@ -1,6 +1,6 @@
 console.clear();
 
-/* Prevent Object Properties from being added or deleted (seal them). */
+/* Prevent Object Properties from being changed at all(freeze it). */
 
 var person = {
   firstname: 'Harman',
@@ -12,10 +12,12 @@ var person = {
 };
 
 console.log('--------Solution--------');
-Object.seal(person);
+Object.freeze(person);
 var personDescriptors = Object.getOwnPropertyDescriptors(person);
 console.log({ personDescriptors });
 for (const [key, value] of Object.entries(personDescriptors)) {
-  console.log(`Configurable property of ${key} is set to ${value.configurable}`);
+  console.log(`Configurable & Writeable property of ${key} is set to ${value.configurable} & ${value.writable} respectively.`);
 }
 
+const isPersonFrozen = Object.isFrozen(person);
+console.log({ isPersonFrozen });
