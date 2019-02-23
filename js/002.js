@@ -2,7 +2,7 @@ console.clear();
 
 /* Iterating over an object (Accessing both keys and values) */
 
-const person = {
+var person = {
   firstname: 'Harman',
   middlename: 'Singh',
   lastname: 'Manchanda',
