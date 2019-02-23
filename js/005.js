@@ -8,7 +8,7 @@ var person = {
   lastname: 'Manchanda',
   nickname: 'Harry',
   age: 26,
-  email: 'harmanmanchanda182@gmail.com'
+  email: 'harmanmanchanda182@gmail.com',
 };
 
 console.log('--------Solution--------');
